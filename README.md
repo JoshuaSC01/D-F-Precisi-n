@@ -1,120 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>D&F Diseño y Fabricación</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1666634157070-6fd830fb5672?q=80&w=1470&auto=format&fit=crop');
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #111;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 30, 0.7), rgba(0, 0, 30, 0.7)),
+        url('https://images.unsplash.com/photo-1602526217033-e57b94e1ab04?auto=format&fit=crop&w=1500&q=80');
       background-size: cover;
       background-position: center;
       color: white;
-    }
-    header {
+      padding: 80px 20px;
       text-align: center;
-      padding: 100px 20px 40px;
-      background-color: rgba(0, 0, 0, 0.5);
     }
+
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
     header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 42px;
+      margin: 10px 0;
     }
+
     header p {
       font-size: 20px;
+      font-weight: 300;
     }
+
     nav {
       background-color: #001f3f;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 15px 0;
+      gap: 30px;
       flex-wrap: wrap;
+      padding: 15px 10px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
+
     .section {
-      padding: 40px 20px;
-      background-color: rgba(255, 255, 255, 0.95);
-      color: #222;
       max-width: 1000px;
-      margin: auto;
+      margin: 30px auto;
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      margin-top: 30px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
+
     .service-box {
-      background-color: #f1f1f1;
+      background: #e6ecf1;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       text-align: center;
+      border-radius: 10px;
     }
+
     .gallery-button a {
       display: inline-block;
       background-color: #001f3f;
       color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
+      padding: 12px 25px;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
       margin-top: 20px;
     }
-    .contact input, .contact textarea {
+
+    .contact input,
+    .contact textarea {
       width: 100%;
-      margin: 5px 0;
       padding: 10px;
+      margin: 8px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
-      font-size: 16px;
+      font-size: 15px;
     }
+
     .contact button {
       background-color: #28a745;
       color: white;
-      padding: 10px;
       border: none;
+      padding: 10px 20px;
       border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
     }
+
     footer {
-      text-align: center;
       background-color: #001f3f;
       color: white;
+      text-align: center;
       padding: 30px 20px;
-      margin-top: 40px;
     }
+
     footer a {
       color: #28a745;
       margin: 0 10px;
       text-decoration: none;
     }
+
     @media (max-width: 600px) {
       header h1 {
-        font-size: 32px;
+        font-size: 28px;
       }
       nav {
         flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://maquinadosdf.github.io/DF-Presicion/logoDF.png" alt="Logo D&F" />
     <h1>D&F Diseño y Fabricación</h1>
     <p>Fabricamos ideas, no solo piezas</p>
   </header>
+
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#nosotros">Nosotros</a>
@@ -122,14 +147,17 @@
     <a href="#galeria">Galería</a>
     <a href="#contacto">Contacto</a>
   </nav>
+
   <section id="inicio" class="section">
     <h2>Bienvenido</h2>
     <p>Ofrecemos soluciones en maquinado de precisión, corte láser, diseño mecánico e impresión 3D para industrias que buscan calidad, compromiso y flexibilidad.</p>
   </section>
+
   <section id="nosotros" class="section">
     <h2>Sobre Nosotros</h2>
     <p>Nos adaptamos a cualquier diseño y fabricación de piezas, metales, polímeros y otros materiales. Contamos con la maquinaria necesaria para cumplir tus objetivos con precisión y puntualidad.</p>
   </section>
+
   <section id="servicios" class="section">
     <h2><i class="fas fa-cogs"></i> Nuestros Servicios</h2>
     <div class="services">
@@ -151,6 +179,7 @@
       </div>
     </div>
   </section>
+
   <section id="galeria" class="section">
     <h2>Galería de Trabajos</h2>
     <p>Conoce nuestros proyectos, piezas y resultados en redes sociales o en nuestra galería en línea.</p>
@@ -158,6 +187,7 @@
       <a href="https://maquinadosdf.github.io/DF-Presicion/" target="_blank">Visitar la Galería</a>
     </div>
   </section>
+
   <section id="contacto" class="section">
     <h2><i class="fas fa-envelope"></i> Contacto</h2>
     <div class="contact">
@@ -174,6 +204,7 @@
       <strong>Sitio web:</strong> <a href="https://maquinadosdf.github.io/DF-Presicion/" target="_blank">DF-Presicion</a>
     </p>
   </section>
+
   <footer>
     <p>&copy; 2025 D&F Diseño y Fabricación - Todos los derechos reservados.</p>
     <p>Contáctanos: fsolyluna@hotmail.com | Joshuasolis_05@hotmail.com | Tel: 3310000793</p>
@@ -183,7 +214,10 @@
       <a href="https://maquinadosdf.github.io/DF-Presicion/" target="_blank">Sitio Web</a>
     </p>
   </footer>
-  <a href="https://wa.me/523315841619" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 15px; border-radius: 50%; text-decoration: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+
+  <!-- Botón de WhatsApp flotante -->
+  <a href="https://wa.me/523315841619" target="_blank"
+     style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 15px; border-radius: 50%; text-decoration: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); z-index: 999;">
     <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
   </a>
 </body>
